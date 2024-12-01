@@ -1,6 +1,9 @@
 spring:
   application:
     name: spring-batch-lecture
+  batch:
+    job:
+      enabled: false
   profiles:
     active: mysql
 ---
