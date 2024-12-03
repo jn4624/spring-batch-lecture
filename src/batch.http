@@ -1,0 +1,15 @@
+POST http://localhost:8080/async
+Content-Type: application/json
+
+{
+  "id": "leaven"
+}
+
+###
+POST http://localhost:8080/sync
+Content-Type: application/json
+
+{
+  "id": "leaven"
+}
+
