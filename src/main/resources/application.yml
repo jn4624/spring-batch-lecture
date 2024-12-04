@@ -17,8 +17,14 @@ spring:
 ---
 spring:
   batch:
+    job:
+      # hard coding ex: job
+      # ${job.name:NONE}: program arguments --job.name=job1,job2
+      names: ${job.name:NONE}
+      enabled: true # auto run
     jdbc:
       initialize-schema: always # schema auto create
+      table-prefix: SYSTEM_
   config:
     activate:
       on-profile: mysql
