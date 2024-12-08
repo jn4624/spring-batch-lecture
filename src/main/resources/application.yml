@@ -3,6 +3,16 @@ spring:
     name: spring-batch-lecture
   profiles:
     active: mysql
+  batch:
+    jdbc:
+      initialize-schema: always # schema auto create
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
 ---
 spring:
   config:
@@ -16,9 +26,6 @@ spring:
       driver-class-name: org.h2.Driver
 ---
 spring:
-  batch:
-    jdbc:
-      initialize-schema: always # schema auto create
   config:
     activate:
       on-profile: mysql
