@@ -17,6 +17,8 @@ spring:
 ---
 spring:
   batch:
+    job:
+      names: ${job.name:NONE}
     jdbc:
       initialize-schema: always # schema auto create
   config:
