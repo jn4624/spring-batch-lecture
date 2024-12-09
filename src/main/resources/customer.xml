@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customer>
+    <customer>
+        <id>59</id>
+        <firstName>Dody</firstName>
+        <lastName>Aggus</lastName>
+        <birthdate>2024-05-05 21:33:35</birthdate>
+    </customer>
+    <customer>
+        <id>97</id>
+        <firstName>Dara</firstName>
+        <lastName>Vela</lastName>
+        <birthdate>2024-05-14 10:36:00</birthdate>
+    </customer>
+</customer>
